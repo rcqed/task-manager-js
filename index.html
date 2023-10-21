@@ -9,7 +9,7 @@
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const folder = urlParams.get('folder') || '';
-        const targetDir = `./${folder}/`;
+        const targetDir = `${folder}/`;
 
         if (!folder) {
             document.getElementById('table').innerHTML = 'Folder not found!';
